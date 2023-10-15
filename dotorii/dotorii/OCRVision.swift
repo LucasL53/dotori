@@ -71,9 +71,3 @@ struct OCRView: View {
         }
     }
 }
-
-struct OCRView_Previews: PreviewProvider {
-    static var previews: some View {
-        OCRView()
-    }
-}

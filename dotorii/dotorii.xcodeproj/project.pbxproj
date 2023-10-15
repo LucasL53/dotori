@@ -26,6 +26,7 @@
 		1D36E8DC2ADB593700EFC9B0 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8D52ADB593700EFC9B0 /* PhotoLibrary.swift */; };
 		1D36E8DE2ADB594500EFC9B0 /* OCRVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */; };
 		1D36E8E02ADB5AA100EFC9B0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8DF2ADB5AA100EFC9B0 /* API.swift */; };
+		1D36E8E42ADB617800EFC9B0 /* LangChain in Frameworks */ = {isa = PBXBuildFile; productRef = 1D36E8E32ADB617800EFC9B0 /* LangChain */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		1D36E8D52ADB593700EFC9B0 /* PhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 		1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRVision.swift; sourceTree = "<group>"; };
 		1D36E8DF2ADB5AA100EFC9B0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1D36E8E12ADB5E8100EFC9B0 /* env.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = env.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D36E8E42ADB617800EFC9B0 /* LangChain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 				1D36E8B52ADB590900EFC9B0 /* ContentView.swift */,
 				1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */,
 				1D36E8DF2ADB5AA100EFC9B0 /* API.swift */,
+				1D36E8E12ADB5E8100EFC9B0 /* env.txt */,
 				1D36E8B72ADB590A00EFC9B0 /* Assets.xcassets */,
 				1D36E8B92ADB590A00EFC9B0 /* Preview Content */,
 			);
@@ -145,6 +149,9 @@
 			dependencies = (
 			);
 			name = dotorii;
+			packageProductDependencies = (
+				1D36E8E32ADB617800EFC9B0 /* LangChain */,
+			);
 			productName = dotorii;
 			productReference = 1D36E8B02ADB590900EFC9B0 /* dotorii.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 1D36E8A72ADB590900EFC9B0;
+			packageReferences = (
+				1D36E8E22ADB617800EFC9B0 /* XCRemoteSwiftPackageReference "langchain-swift" */,
+			);
 			productRefGroup = 1D36E8B12ADB590900EFC9B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -416,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D36E8E22ADB617800EFC9B0 /* XCRemoteSwiftPackageReference "langchain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/buhe/langchain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D36E8E32ADB617800EFC9B0 /* LangChain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D36E8E22ADB617800EFC9B0 /* XCRemoteSwiftPackageReference "langchain-swift" */;
+			productName = LangChain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D36E8A82ADB590900EFC9B0 /* Project object */;
 }
