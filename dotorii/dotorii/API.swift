@@ -7,6 +7,7 @@
 
 import AVFoundation
 import LangChain
+import Foundation
 
 class LLM_API {
     private var speechSynthesizer = AVSpeechSynthesizer()
@@ -14,9 +15,10 @@ class LLM_API {
     func analyzeReceipt(receipt_data:String) -> String {
         var output = ""
         
-        let template =
+        let template = 
         """
-        You are a receipt analyzer that analyzes this receipt READING EACH ITEM BOUGHT, ITS COST, AND THE TOTAL. Keep it short and concise
+        Based on this information create a json fie to create an event with the google calendar API. 
+        Only return the code without any additional lines.
 
         %@
         Human: %@
@@ -46,6 +48,19 @@ class LLM_API {
 //            print("did you hear me?")
 
             return output["Answer"]!
+        }
+
+        let jsonData = output.data(using: .utf8)
+
+        if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            let jsonFileURL = documentDirectory.appendingPathComponent("output.json")
+    
+            do {
+                try jsonData?.write(to: jsonFileURL)
+                print("JSON data has been saved to \(jsonFileURL.path)")
+            } catch {
+                print("Error writing JSON data to file: \(error)")
+            }
         }
         
         return output
