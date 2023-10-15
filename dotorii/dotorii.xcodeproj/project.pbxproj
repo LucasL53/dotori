@@ -17,18 +17,17 @@
 		1D36E8CB2ADB592200EFC9B0 /* PhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8C52ADB592200EFC9B0 /* PhotoCollectionView.swift */; };
 		1D36E8CC2ADB592200EFC9B0 /* ViewfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8C62ADB592200EFC9B0 /* ViewfinderView.swift */; };
 		1D36E8CD2ADB592200EFC9B0 /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8C72ADB592200EFC9B0 /* ThumbnailView.swift */; };
-		1D36E8D62ADB593700EFC9B0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8CF2ADB593700EFC9B0 /* DataModel.swift */; };
-		1D36E8D72ADB593700EFC9B0 /* PhotoAssetCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8D02ADB593700EFC9B0 /* PhotoAssetCollection.swift */; };
-		1D36E8D82ADB593700EFC9B0 /* CachedImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8D12ADB593700EFC9B0 /* CachedImageManager.swift */; };
-		1D36E8D92ADB593700EFC9B0 /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8D22ADB593700EFC9B0 /* PhotoCollection.swift */; };
-		1D36E8DA2ADB593700EFC9B0 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8D32ADB593700EFC9B0 /* Camera.swift */; };
-		1D36E8DB2ADB593700EFC9B0 /* PhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8D42ADB593700EFC9B0 /* PhotoAsset.swift */; };
-		1D36E8DC2ADB593700EFC9B0 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8D52ADB593700EFC9B0 /* PhotoLibrary.swift */; };
 		1D36E8DE2ADB594500EFC9B0 /* OCRVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */; };
 		1D36E8E02ADB5AA100EFC9B0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8DF2ADB5AA100EFC9B0 /* API.swift */; };
 		1D36E8E42ADB617800EFC9B0 /* LangChain in Frameworks */ = {isa = PBXBuildFile; productRef = 1D36E8E32ADB617800EFC9B0 /* LangChain */; };
-		1D36E9052ADB78F600EFC9B0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E9042ADB78F600EFC9B0 /* ScannerViewController.swift */; };
 		1D36E9072ADB7ED500EFC9B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D36E9062ADB7ED500EFC9B0 /* GoogleService-Info.plist */; };
+		1D36E9102ADB895400EFC9B0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E9092ADB895400EFC9B0 /* DataModel.swift */; };
+		1D36E9112ADB895400EFC9B0 /* PhotoAssetCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90A2ADB895400EFC9B0 /* PhotoAssetCollection.swift */; };
+		1D36E9122ADB895400EFC9B0 /* CachedImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90B2ADB895400EFC9B0 /* CachedImageManager.swift */; };
+		1D36E9132ADB895400EFC9B0 /* PhotoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90C2ADB895400EFC9B0 /* PhotoCollection.swift */; };
+		1D36E9142ADB895400EFC9B0 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90D2ADB895400EFC9B0 /* Camera.swift */; };
+		1D36E9152ADB895400EFC9B0 /* PhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90E2ADB895400EFC9B0 /* PhotoAsset.swift */; };
+		1D36E9162ADB895400EFC9B0 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90F2ADB895400EFC9B0 /* PhotoLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,18 +42,17 @@
 		1D36E8C52ADB592200EFC9B0 /* PhotoCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionView.swift; sourceTree = "<group>"; };
 		1D36E8C62ADB592200EFC9B0 /* ViewfinderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewfinderView.swift; sourceTree = "<group>"; };
 		1D36E8C72ADB592200EFC9B0 /* ThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
-		1D36E8CF2ADB593700EFC9B0 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		1D36E8D02ADB593700EFC9B0 /* PhotoAssetCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAssetCollection.swift; sourceTree = "<group>"; };
-		1D36E8D12ADB593700EFC9B0 /* CachedImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageManager.swift; sourceTree = "<group>"; };
-		1D36E8D22ADB593700EFC9B0 /* PhotoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
-		1D36E8D32ADB593700EFC9B0 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		1D36E8D42ADB593700EFC9B0 /* PhotoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAsset.swift; sourceTree = "<group>"; };
-		1D36E8D52ADB593700EFC9B0 /* PhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 		1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRVision.swift; sourceTree = "<group>"; };
 		1D36E8DF2ADB5AA100EFC9B0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1D36E8E12ADB5E8100EFC9B0 /* env.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = env.txt; sourceTree = "<group>"; };
-		1D36E9042ADB78F600EFC9B0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		1D36E9062ADB7ED500EFC9B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1D36E9092ADB895400EFC9B0 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		1D36E90A2ADB895400EFC9B0 /* PhotoAssetCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAssetCollection.swift; sourceTree = "<group>"; };
+		1D36E90B2ADB895400EFC9B0 /* CachedImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImageManager.swift; sourceTree = "<group>"; };
+		1D36E90C2ADB895400EFC9B0 /* PhotoCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollection.swift; sourceTree = "<group>"; };
+		1D36E90D2ADB895400EFC9B0 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		1D36E90E2ADB895400EFC9B0 /* PhotoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAsset.swift; sourceTree = "<group>"; };
+		1D36E90F2ADB895400EFC9B0 /* PhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,14 +87,12 @@
 		1D36E8B22ADB590900EFC9B0 /* dotorii */ = {
 			isa = PBXGroup;
 			children = (
+				1D36E8E12ADB5E8100EFC9B0 /* env.txt */,
+				1D36E9082ADB895400EFC9B0 /* Camera */,
 				1D36E9032ADB78D800EFC9B0 /* AI */,
 				1D36E8C12ADB592200EFC9B0 /* Camera View */,
-				1D36E8CE2ADB593700EFC9B0 /* Camera Model */,
 				1D36E8B32ADB590900EFC9B0 /* dotoriiApp.swift */,
 				1D36E8B52ADB590900EFC9B0 /* ContentView.swift */,
-				1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */,
-				1D36E8DF2ADB5AA100EFC9B0 /* API.swift */,
-				1D36E8E12ADB5E8100EFC9B0 /* env.txt */,
 				1D36E8B72ADB590A00EFC9B0 /* Assets.xcassets */,
 				1D36E8B92ADB590A00EFC9B0 /* Preview Content */,
 			);
@@ -124,27 +120,27 @@
 			path = "Camera View";
 			sourceTree = "<group>";
 		};
-		1D36E8CE2ADB593700EFC9B0 /* Camera Model */ = {
-			isa = PBXGroup;
-			children = (
-				1D36E8CF2ADB593700EFC9B0 /* DataModel.swift */,
-				1D36E8D02ADB593700EFC9B0 /* PhotoAssetCollection.swift */,
-				1D36E8D12ADB593700EFC9B0 /* CachedImageManager.swift */,
-				1D36E8D22ADB593700EFC9B0 /* PhotoCollection.swift */,
-				1D36E8D32ADB593700EFC9B0 /* Camera.swift */,
-				1D36E8D42ADB593700EFC9B0 /* PhotoAsset.swift */,
-				1D36E8D52ADB593700EFC9B0 /* PhotoLibrary.swift */,
-				1D36E9042ADB78F600EFC9B0 /* ScannerViewController.swift */,
-			);
-			name = "Camera Model";
-			path = "../../../HackMIT2023Project/FinSight/FinSight/Model/Camera Model";
-			sourceTree = "<group>";
-		};
 		1D36E9032ADB78D800EFC9B0 /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				1D36E8DF2ADB5AA100EFC9B0 /* API.swift */,
+				1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */,
 			);
 			path = AI;
+			sourceTree = "<group>";
+		};
+		1D36E9082ADB895400EFC9B0 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				1D36E9092ADB895400EFC9B0 /* DataModel.swift */,
+				1D36E90A2ADB895400EFC9B0 /* PhotoAssetCollection.swift */,
+				1D36E90B2ADB895400EFC9B0 /* CachedImageManager.swift */,
+				1D36E90C2ADB895400EFC9B0 /* PhotoCollection.swift */,
+				1D36E90D2ADB895400EFC9B0 /* Camera.swift */,
+				1D36E90E2ADB895400EFC9B0 /* PhotoAsset.swift */,
+				1D36E90F2ADB895400EFC9B0 /* PhotoLibrary.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,24 +220,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D36E9122ADB895400EFC9B0 /* CachedImageManager.swift in Sources */,
+				1D36E9162ADB895400EFC9B0 /* PhotoLibrary.swift in Sources */,
 				1D36E8CA2ADB592200EFC9B0 /* PhotoItemView.swift in Sources */,
-				1D36E8D72ADB593700EFC9B0 /* PhotoAssetCollection.swift in Sources */,
-				1D36E8D82ADB593700EFC9B0 /* CachedImageManager.swift in Sources */,
+				1D36E9132ADB895400EFC9B0 /* PhotoCollection.swift in Sources */,
 				1D36E8C82ADB592200EFC9B0 /* PhotoView.swift in Sources */,
+				1D36E9102ADB895400EFC9B0 /* DataModel.swift in Sources */,
+				1D36E9152ADB895400EFC9B0 /* PhotoAsset.swift in Sources */,
 				1D36E8B62ADB590900EFC9B0 /* ContentView.swift in Sources */,
 				1D36E8B42ADB590900EFC9B0 /* dotoriiApp.swift in Sources */,
 				1D36E8DE2ADB594500EFC9B0 /* OCRVision.swift in Sources */,
 				1D36E8C92ADB592200EFC9B0 /* CameraView.swift in Sources */,
-				1D36E8DC2ADB593700EFC9B0 /* PhotoLibrary.swift in Sources */,
-				1D36E8DB2ADB593700EFC9B0 /* PhotoAsset.swift in Sources */,
+				1D36E9112ADB895400EFC9B0 /* PhotoAssetCollection.swift in Sources */,
 				1D36E8CD2ADB592200EFC9B0 /* ThumbnailView.swift in Sources */,
+				1D36E9142ADB895400EFC9B0 /* Camera.swift in Sources */,
 				1D36E8CB2ADB592200EFC9B0 /* PhotoCollectionView.swift in Sources */,
 				1D36E8CC2ADB592200EFC9B0 /* ViewfinderView.swift in Sources */,
-				1D36E9052ADB78F600EFC9B0 /* ScannerViewController.swift in Sources */,
-				1D36E8DA2ADB593700EFC9B0 /* Camera.swift in Sources */,
-				1D36E8D92ADB593700EFC9B0 /* PhotoCollection.swift in Sources */,
 				1D36E8E02ADB5AA100EFC9B0 /* API.swift in Sources */,
-				1D36E8D62ADB593700EFC9B0 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +369,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "App requires Camera to scan posters and QR codes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App requires to save images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -404,6 +400,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "App requires Camera to scan posters and QR codes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App requires to save images";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

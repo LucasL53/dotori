@@ -38,7 +38,7 @@ class LLM_API {
             var input = ["human_input": receipt_data]
             var output = await chatgpt_chain.predict(args: input)
             print(output["Answer"]!)
-            print("FINISHED ANALYZING RECEIPT")
+//            print("FINISHED ANALYZING RECEIPT")
 //            let utterance = AVSpeechUtterance(string: output["Answer"]!)
 //            utterance.pitchMultiplier = 1.0
 //            utterance.rate = 0.5
