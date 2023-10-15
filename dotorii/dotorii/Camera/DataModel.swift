@@ -19,8 +19,6 @@ final class DataModel: ObservableObject {
     let api = LLM_API()
     let dirpath = "/Users/yunseolee/Documents/Github/dotorii/dotorii/dotorii/AI"
     
-    let sys = Python.import("sys")
-    
     @Published var viewfinderImage: Image?
     @Published var thumbnailImage: Image?
     @Published var recognizedText: String = ""
@@ -39,6 +37,13 @@ final class DataModel: ObservableObject {
         Task {
             await handleCameraPhotos()
         }
+    }
+    
+    func runPythonCode(input: String){
+      let sys = Python.import("sys")
+      sys.path.append(dirpath)
+      let example = Python.import("googleCalendar")
+      let response = example.create_event("DUBHACK \'23", "Explore limitless imagination in tech\'s ever-changing world. Join us at \'Beyond Imaginable,\' the largest collegiate hackathon in the PNW, where boundaries blur and possibilities bloom.", "2023-10-14T00:00:00", "2023-10-15T23:59:59", "University of Washington, Seattle")
     }
 
     func handleCameraPreviews() async {
@@ -73,7 +78,7 @@ final class DataModel: ObservableObject {
                     self.recognizedText = text
                     self.output = self.api.runQuery(poster: self.recognizedText)
                     print(self.output)
-                    
+                    self.runPythonCode(input: self.output)
                 }
             }
 

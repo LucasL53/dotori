@@ -29,6 +29,8 @@
 		1D36E9152ADB895400EFC9B0 /* PhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90E2ADB895400EFC9B0 /* PhotoAsset.swift */; };
 		1D36E9162ADB895400EFC9B0 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90F2ADB895400EFC9B0 /* PhotoLibrary.swift */; };
 		1D36E9192ADBE20C00EFC9B0 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1D36E9182ADBE20C00EFC9B0 /* OpenAI */; };
+		1DBD969A2ADC017000C652D4 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1DBD96992ADC017000C652D4 /* PythonKit */; };
+		1DBD969C2ADC01B900C652D4 /* googleCalendar.py in Resources */ = {isa = PBXBuildFile; fileRef = 1DBD969B2ADC01B900C652D4 /* googleCalendar.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +47,6 @@
 		1D36E8C72ADB592200EFC9B0 /* ThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
 		1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRVision.swift; sourceTree = "<group>"; };
 		1D36E8DF2ADB5AA100EFC9B0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		1D36E8E12ADB5E8100EFC9B0 /* env.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = env.txt; sourceTree = "<group>"; };
 		1D36E9062ADB7ED500EFC9B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1D36E9092ADB895400EFC9B0 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		1D36E90A2ADB895400EFC9B0 /* PhotoAssetCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAssetCollection.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		1D36E90D2ADB895400EFC9B0 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		1D36E90E2ADB895400EFC9B0 /* PhotoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAsset.swift; sourceTree = "<group>"; };
 		1D36E90F2ADB895400EFC9B0 /* PhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
+		1DBD969B2ADC01B900C652D4 /* googleCalendar.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = googleCalendar.py; path = dotorii/googleCalendar.py; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			files = (
 				1D36E9192ADBE20C00EFC9B0 /* OpenAI in Frameworks */,
 				1D36E8E42ADB617800EFC9B0 /* LangChain in Frameworks */,
+				1DBD969A2ADC017000C652D4 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +99,6 @@
 				1D36E8B52ADB590900EFC9B0 /* ContentView.swift */,
 				1D36E8B72ADB590A00EFC9B0 /* Assets.xcassets */,
 				1D36E8B92ADB590A00EFC9B0 /* Preview Content */,
-				1D36E8E12ADB5E8100EFC9B0 /* env.txt */,
 			);
 			path = dotorii;
 			sourceTree = "<group>";
@@ -125,6 +127,7 @@
 		1D36E9032ADB78D800EFC9B0 /* AI */ = {
 			isa = PBXGroup;
 			children = (
+				1DBD969B2ADC01B900C652D4 /* googleCalendar.py */,
 				1D36E8DF2ADB5AA100EFC9B0 /* API.swift */,
 				1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */,
 			);
@@ -164,6 +167,7 @@
 			packageProductDependencies = (
 				1D36E8E32ADB617800EFC9B0 /* LangChain */,
 				1D36E9182ADBE20C00EFC9B0 /* OpenAI */,
+				1DBD96992ADC017000C652D4 /* PythonKit */,
 			);
 			productName = dotorii;
 			productReference = 1D36E8B02ADB590900EFC9B0 /* dotorii.app */;
@@ -196,6 +200,7 @@
 			packageReferences = (
 				1D36E8E22ADB617800EFC9B0 /* XCRemoteSwiftPackageReference "langchain-swift" */,
 				1D36E9172ADBE20C00EFC9B0 /* XCRemoteSwiftPackageReference "OpenAI" */,
+				1DBD96982ADC017000C652D4 /* XCRemoteSwiftPackageReference "PythonKit" */,
 			);
 			productRefGroup = 1D36E8B12ADB590900EFC9B0 /* Products */;
 			projectDirPath = "";
@@ -214,6 +219,7 @@
 				1D36E8BB2ADB590A00EFC9B0 /* Preview Assets.xcassets in Resources */,
 				1D36E8B82ADB590A00EFC9B0 /* Assets.xcassets in Resources */,
 				1D36E9072ADB7ED500EFC9B0 /* GoogleService-Info.plist in Resources */,
+				1DBD969C2ADC01B900C652D4 /* googleCalendar.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +469,14 @@
 				minimumVersion = 0.2.4;
 			};
 		};
+		1DBD96982ADC017000C652D4 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -475,6 +489,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1D36E9172ADBE20C00EFC9B0 /* XCRemoteSwiftPackageReference "OpenAI" */;
 			productName = OpenAI;
+		};
+		1DBD96992ADC017000C652D4 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DBD96982ADC017000C652D4 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
