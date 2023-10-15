@@ -28,6 +28,7 @@
 		1D36E9142ADB895400EFC9B0 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90D2ADB895400EFC9B0 /* Camera.swift */; };
 		1D36E9152ADB895400EFC9B0 /* PhotoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90E2ADB895400EFC9B0 /* PhotoAsset.swift */; };
 		1D36E9162ADB895400EFC9B0 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E90F2ADB895400EFC9B0 /* PhotoLibrary.swift */; };
+		1D36E9192ADBE20C00EFC9B0 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 1D36E9182ADBE20C00EFC9B0 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D36E9192ADBE20C00EFC9B0 /* OpenAI in Frameworks */,
 				1D36E8E42ADB617800EFC9B0 /* LangChain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +163,7 @@
 			name = dotorii;
 			packageProductDependencies = (
 				1D36E8E32ADB617800EFC9B0 /* LangChain */,
+				1D36E9182ADBE20C00EFC9B0 /* OpenAI */,
 			);
 			productName = dotorii;
 			productReference = 1D36E8B02ADB590900EFC9B0 /* dotorii.app */;
@@ -192,6 +195,7 @@
 			mainGroup = 1D36E8A72ADB590900EFC9B0;
 			packageReferences = (
 				1D36E8E22ADB617800EFC9B0 /* XCRemoteSwiftPackageReference "langchain-swift" */,
+				1D36E9172ADBE20C00EFC9B0 /* XCRemoteSwiftPackageReference "OpenAI" */,
 			);
 			productRefGroup = 1D36E8B12ADB590900EFC9B0 /* Products */;
 			projectDirPath = "";
@@ -451,6 +455,14 @@
 				minimumVersion = 0.27.0;
 			};
 		};
+		1D36E9172ADBE20C00EFC9B0 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -458,6 +470,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1D36E8E22ADB617800EFC9B0 /* XCRemoteSwiftPackageReference "langchain-swift" */;
 			productName = LangChain;
+		};
+		1D36E9182ADBE20C00EFC9B0 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D36E9172ADBE20C00EFC9B0 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

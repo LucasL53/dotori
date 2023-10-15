@@ -8,6 +8,7 @@
 import AVFoundation
 import LangChain
 import Foundation
+import OpenAI
 
 class LLM_API {
     private var speechSynthesizer = AVSpeechSynthesizer()

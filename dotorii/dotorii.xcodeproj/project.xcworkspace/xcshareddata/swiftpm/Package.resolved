@@ -64,6 +64,15 @@
       }
     },
     {
+      "identity" : "openai",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MacPaw/OpenAI.git",
+      "state" : {
+        "revision" : "c45f3320ffa760f043c0239f724850c0e4f8bde5",
+        "version" : "0.2.4"
+      }
+    },
+    {
       "identity" : "openai-kit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dylanshine/openai-kit",
