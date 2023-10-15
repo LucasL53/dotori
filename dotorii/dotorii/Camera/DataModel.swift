@@ -9,6 +9,7 @@ import AVFoundation
 import SwiftUI
 import os.log
 import Vision
+import PythonKit
 
 final class DataModel: ObservableObject {
     let camera = Camera()
@@ -16,6 +17,9 @@ final class DataModel: ObservableObject {
 
     let ocr = OCRViewModel()
     let api = LLM_API()
+    let dirpath = "/Users/yunseolee/Documents/Github/dotorii/dotorii/dotorii/AI"
+    
+    let sys = Python.import("sys")
     
     @Published var viewfinderImage: Image?
     @Published var thumbnailImage: Image?
@@ -67,8 +71,9 @@ final class DataModel: ObservableObject {
                 if let text = recognizedText, !text.isEmpty {
                     // Store the recognized text or process it further
                     self.recognizedText = text
-                    self.output = self.api.analyzeReceipt(receipt_data: self.recognizedText)
+                    self.output = self.api.runQuery(poster: self.recognizedText)
                     print(self.output)
+                    
                 }
             }
 
