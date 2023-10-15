@@ -89,3 +89,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 dotorii/dotorii/env.txt
+dotorii/dotorii/token.json
+dotorii/dotorii/credentials.json

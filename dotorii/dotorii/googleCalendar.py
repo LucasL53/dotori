@@ -2,34 +2,12 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
-import datetime
+# import datetime
 import os
 
 # If modifying these SCOPES, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
-# output = {
-#   "summary": "DUBHACKS ’23 - Beyond Imaginable",
-#   "location": "University of Washington, Seattle",
-#   "description": "Explore limitless imagination in tech's ever-changing world. Join us at ‘Beyond Imaginable,’ the largest collegiate hackathon in the PNW, where boundaries blur and possibilities bloom. DubHacks hosts the next-gen of tech leaders from across the globe, all united to solve the pressing challenges of our generation. Let's shape the future together. What will you build?",
-#   "start": {
-#     "dateTime": "2023-10-14T00:00:00",
-#     "timeZone": "America/Los_Angeles"
-#   },
-#   "end": {
-#     "dateTime": "2023-10-15T23:59:59",
-#     "timeZone": "America/Los_Angeles"
-#   },
-#   "reminders": {
-#     "useDefault": false,
-#     "overrides": [
-#       {
-#         "method": "popup",
-#         "minutes": 30
-#       }
-#     ]
-#   }
-# }
 
 def authenticate_google_calendar():
     creds = None
@@ -49,6 +27,7 @@ def authenticate_google_calendar():
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
     return creds
+
 
 def create_event(summary, description, start_datetime, end_datetime, location):
     creds = authenticate_google_calendar()
@@ -79,6 +58,7 @@ def create_event(summary, description, start_datetime, end_datetime, location):
     # Call the Calendar API
     event = service.events().insert(calendarId='primary', body=event).execute()
     print('Event created: %s' % (event.get('htmlLink')))
+
 
 if __name__ == '__main__':
     # Call create_event with your specific event details
