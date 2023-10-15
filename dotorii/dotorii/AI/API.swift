@@ -50,18 +50,18 @@ class LLM_API {
             return output["Answer"]!
         }
 
-        let jsonData = output.data(using: .utf8)
-
-        if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-            let jsonFileURL = documentDirectory.appendingPathComponent("output.json")
-    
-            do {
-                try jsonData?.write(to: jsonFileURL)
-                print("JSON data has been saved to \(jsonFileURL.path)")
-            } catch {
-                print("Error writing JSON data to file: \(error)")
-            }
-        }
+//        let jsonData = output.data(using: .utf8)
+//
+//        if let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+//            let jsonFileURL = documentDirectory.appendingPathComponent("output.json")
+//    
+//            do {
+//                try jsonData?.write(to: jsonFileURL)
+//                print("JSON data has been saved to \(jsonFileURL.path)")
+//            } catch {
+//                print("Error writing JSON data to file: \(error)")
+//            }
+//        }
         
         return output
     }

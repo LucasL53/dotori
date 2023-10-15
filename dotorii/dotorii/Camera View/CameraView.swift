@@ -42,6 +42,10 @@ struct CameraView: View {
                 await model.loadPhotos()
                 await model.loadThumbnail()
             }
+            .contentShape(Rectangle())
+            .onTapGesture {
+                model.camera.takePhoto()
+            }
             .navigationTitle("Camera")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarHidden(true)

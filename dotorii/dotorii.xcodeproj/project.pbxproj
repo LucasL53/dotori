@@ -87,7 +87,6 @@
 		1D36E8B22ADB590900EFC9B0 /* dotorii */ = {
 			isa = PBXGroup;
 			children = (
-				1D36E8E12ADB5E8100EFC9B0 /* env.txt */,
 				1D36E9082ADB895400EFC9B0 /* Camera */,
 				1D36E9032ADB78D800EFC9B0 /* AI */,
 				1D36E8C12ADB592200EFC9B0 /* Camera View */,
@@ -95,6 +94,7 @@
 				1D36E8B52ADB590900EFC9B0 /* ContentView.swift */,
 				1D36E8B72ADB590A00EFC9B0 /* Assets.xcassets */,
 				1D36E8B92ADB590A00EFC9B0 /* Preview Content */,
+				1D36E8E12ADB5E8100EFC9B0 /* env.txt */,
 			);
 			path = dotorii;
 			sourceTree = "<group>";
