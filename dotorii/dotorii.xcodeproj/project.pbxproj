@@ -27,6 +27,7 @@
 		1D36E8DE2ADB594500EFC9B0 /* OCRVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */; };
 		1D36E8E02ADB5AA100EFC9B0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E8DF2ADB5AA100EFC9B0 /* API.swift */; };
 		1D36E8E42ADB617800EFC9B0 /* LangChain in Frameworks */ = {isa = PBXBuildFile; productRef = 1D36E8E32ADB617800EFC9B0 /* LangChain */; };
+		1D36E9052ADB78F600EFC9B0 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D36E9042ADB78F600EFC9B0 /* ScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		1D36E8DD2ADB594500EFC9B0 /* OCRVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRVision.swift; sourceTree = "<group>"; };
 		1D36E8DF2ADB5AA100EFC9B0 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1D36E8E12ADB5E8100EFC9B0 /* env.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = env.txt; sourceTree = "<group>"; };
+		1D36E9042ADB78F600EFC9B0 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		1D36E8B22ADB590900EFC9B0 /* dotorii */ = {
 			isa = PBXGroup;
 			children = (
+				1D36E9032ADB78D800EFC9B0 /* AI */,
 				1D36E8C12ADB592200EFC9B0 /* Camera View */,
 				1D36E8CE2ADB593700EFC9B0 /* Camera Model */,
 				1D36E8B32ADB590900EFC9B0 /* dotoriiApp.swift */,
@@ -128,9 +131,17 @@
 				1D36E8D32ADB593700EFC9B0 /* Camera.swift */,
 				1D36E8D42ADB593700EFC9B0 /* PhotoAsset.swift */,
 				1D36E8D52ADB593700EFC9B0 /* PhotoLibrary.swift */,
+				1D36E9042ADB78F600EFC9B0 /* ScannerViewController.swift */,
 			);
 			name = "Camera Model";
 			path = "../../../HackMIT2023Project/FinSight/FinSight/Model/Camera Model";
+			sourceTree = "<group>";
+		};
+		1D36E9032ADB78D800EFC9B0 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				1D36E8CD2ADB592200EFC9B0 /* ThumbnailView.swift in Sources */,
 				1D36E8CB2ADB592200EFC9B0 /* PhotoCollectionView.swift in Sources */,
 				1D36E8CC2ADB592200EFC9B0 /* ViewfinderView.swift in Sources */,
+				1D36E9052ADB78F600EFC9B0 /* ScannerViewController.swift in Sources */,
 				1D36E8DA2ADB593700EFC9B0 /* Camera.swift in Sources */,
 				1D36E8D92ADB593700EFC9B0 /* PhotoCollection.swift in Sources */,
 				1D36E8E02ADB5AA100EFC9B0 /* API.swift in Sources */,
@@ -357,6 +369,7 @@
 				DEVELOPMENT_TEAM = 7BYH4HTJ4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App requires Camera to scan posters and QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -386,6 +399,7 @@
 				DEVELOPMENT_TEAM = 7BYH4HTJ4D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App requires Camera to scan posters and QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
